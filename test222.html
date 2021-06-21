@@ -10,12 +10,14 @@
     </head>
 	<body>
 	    <?php
-			$name = "Tili";
-			$height = 164;
-			$weight = 50;
-			$value = ($height/100)*($height/100)/$weight;
-					
-			echo "Name" . $name ."<br>" . "BMI Value" . $value;
+		datte_default_timezone_set('Asia/Taipei');
+		$datetime = date("H");
+
+		if($datetime < "10"){
+			echo "Good morning";}
+		elseif($datetime < "14"){echo "Good afternoon";}
+		elseif($datetime < "18"){echo "Good evening";}
+		else{echo "Good night";}
 		?> 
 	</body>
     <body>
@@ -211,7 +213,6 @@
                 <hr color = "black" size="5">
 				<h2>個人簡介</h2>
                 <section class="imageunit">
-                        <img src="img/hw03-1.jpg">
 						<p>|  陳陳  |  LITI CHEN  |  二〇〇一 年 |</p>
 					<p>2019年就讀國立中央大學-資訊管理學系</p>
 					<p>陳陳愛好：
