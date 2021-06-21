@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">  
+        <title>Tili</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="網頁設計。">  
+        <link rel="stylesheet">
+    </head>
+	<body>
+	    <?php
+			$name = "Tili";
+			$height = 164;
+			$weight = 50;
+			$value = ($height/100)*($height/100)/$weight;
+					
+			echo "Name" . $name ."<br>" . "BMI Value" . $value;
+		?> 
+	</body>
+    <body>
+		<style>
+		<!-- 網站標題-->
+		h1 {
+			font-size: 1em;
+			color: #163F78;
+			text-align: center;
+		}
+
+		<!-- 標題-->
+		h2 {
+			font-size: 24px;
+			color: #0C2950;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 20px;
+			color: #1D1D1D;
+		   
+				border-left: solid 5px #0F3568;  <!-- /* 標題三左側有寬6px的色塊 */ -->
+			padding-left: 6px;               <!-- /* 標題三左側設定6px的間距 */ -->
+		}
+		<!-- 超連結設定-->
+		a{
+			color: #123D77;
+			text-decoration: none;
+		}
+
+		a:hover{
+			color:#C8D700;
+			text-decoration: none;
+		}
+		<!-- 圖片無邊框-->
+		img{
+			border: 0;
+		}
+		/* article */
+		article {
+			padding: 32px 16px;
+		}
+
+		<!-- 簡介調整了背景色與文字顏色-->
+		#profile {
+			background-color:#0C2950;
+			color: #ffffff;
+			text-align:center 
+		}
+		#profile h2 {
+			color:#EFEFEF;
+		}
+
+
+		<!-- 設定內容寬度的上限-->
+		.inner {
+			max-width: 900px;
+			margin: 0 auto;  <!-- /* 左右置中 */ -->
+		}
+		#advanced,#html,#rwd{
+			max-width: 900px;
+			margin: 0 auto; <!-- /*  左右置中 */  -->
+		}
+		<!-- css調整背景色-->
+		#css{
+			background: #FFFFFF;
+			color: #000000
+		}
+
+		<!-- section-->
+		section {
+			margin: 48px 0px;    <!-- /* 區塊外部距離：上下48px  左右0px*/ -->
+		}
+		<!-- 列表section-->
+		.webimg {
+			margin: 24px 0;
+			overflow: hidden;
+		}
+		.webimg img {
+			float: left;
+			margin-right: 16px;
+			max-width: 100%;
+			height: auto;
+		}
+		.webimg h4 {
+			margin: 0 0 0.5em;
+		}
+		.webimg p {
+			margin: 0;
+		}
+
+		<!-- 表格-->
+		table {
+			border-collapse: collapse;  <!-- 邊框合併為單一邊框，讓表格變得更美化 -->
+			width: 100%;               <!-- /* 表格寬度設為100%，會隨著螢幕寬度縮放*/ -->
+		}
+
+		th,td {
+			border: solid 1px #144689;  <!--  /* 邊框底邊，設定為實線、1px、#0C2950深灰色細邊炳框*/ -->
+			padding: 16px;        <!--   /* 內距設為16px*/ -->
+}
+		}
+		th {
+			font-weight: 400;        <!--  /* 表格標題字體粗細設為400*/ -->
+			background-color:#0C2950; 
+			color: #EBEBEB
+		}
+
+		.navigation ul {
+			background-color: #FFFFFF;
+			margin: 0;
+			padding: 4px;
+			text-align: center;
+		}
+		.navigation ul li {
+			list-style-type: none;
+			display: inline;
+			margin: 0 8px;
+		}
+		.navigation ul li a {
+			color: #0C2950;
+			text-decoration: none;
+		}
+		.navigation ul li a:hover {
+			color:#C3E000;
+			text-decoration:none;
+		}
+
+
+		.mainvisual {
+			background-color:#FCFFDC;
+		}
+		.mainvisual img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.imageunit {
+			margin: 0;
+			overflow: hidden;   <!--  /* 自動隱藏超出的文字或圖片。*/ -->
+		}
+		.imageunit img {
+			float: left;  <!-- /* 靠左浮動*/ -->
+			margin-right: 20px;
+		}
+		.imageunit p {
+			margin: 0 0 1em; <!--  /* 外距 上  左右  下*/ -->
+		}
+
+
+		.pagetop {
+			text-align: right;
+		}
+
+		.copyright {
+			border-top: solid 5px #0C2950;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		footer{
+			font-size:14px;
+			font-weight: 200;
+			line-height: 1em;
+			padding: 20px;
+		}
+		</style>
+        <header>
+            <center><h1><a href="test222.html"><img src="./logo.png"></a></h1></center>  <!-- 置入ＬＯＧＯ圖片-->
+
+            <nav class="navigation"> 
+               <ul>
+                    <li><a href="test222.html">|&nbsp;&nbsp;首頁</a></li>
+                </ul>
+            </nav>               
+        </header>
+        
+        <main>
+            <div class="mainvisual">   <!-- 視覺主圖設定-->
+                <img src="./tili.png">
+            </div>
+            
+            <article id="profile">  <!-- 第一個articl區塊，命名為profile/底色設定-->
+               <div class="inner">  <!-- 類別.inner開始，設定固定寬度900px-->
+                <h2>tiiii</h2>
+				<p>愛狗的人</p>
+               </div>
+            </article>
+			 <article id="rwd">
+                <hr color = "black" size="5">
+				<h2>個人簡介</h2>
+                <section class="imageunit">
+                        <img src="img/hw03-1.jpg">
+						<p>|  陳陳  |  LITI CHEN  |  二〇〇一 年 |</p>
+					<p>2019年就讀國立中央大學-資訊管理學系</p>
+					<p>陳陳愛好：
+						<br>喜愛戶外運動，想嘗試跳傘、自淺</p>
+                </section>
+            </article>
+           
+            <article id="css">     <!-- 第三個article區塊，命名為css/底色設定-->
+               <div class="inner"> <!-- 類別.inner開始，設定固定寬度900px-->
+                <hr color = "black" size="5">
+				<h2>自傳</h2>
+                <p>我是陳陳，今年十九，現讀國立中央大學資管理學系。
+				高雄人，熱愛高雄一切(多半是因為美食很多)，但不是韓粉。</p>
+				</div>              <!-- 類別.inner結束-->
+            </article>              <!-- 第三個article區塊css結束-->           
+             <article id="html">			 <!-- 第二個articl區塊，命名為html，直接設定固定寬度-->
+				<hr color = "black" size="5">
+				<h2>個人簡歷</h2>
+               <section>
+				   <section>
+                    <h3>獲獎</h3>
+                    <table>
+                        <tr>
+                            <th width="30%">年分</th>
+                            <th>獲獎紀錄</th>
+                        </tr>
+                        <tr>
+                            <td>2001</td>
+                            <td>抓週大賽-直接跑去抓我媽</td>
+
+                    </table>
+				</section>
+				<section>
+				   <section>
+                    <h3>個人經歷</h3>
+                    <table>
+                        <tr>
+                            <th width="30%">年分</th>
+                            <th>經歷</th>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>中大汪汪社-社員</td>
+			
+                    </table>
+				</section>
+            </article>
+        </main>
+        <footer>
+            <p class="pagetop"><a href="#top">▲回到本頁開頭</a></p>
+			<p class="copyright"><small>&copy; Copyright 2021|Tili|陳陳愛好</small></p>
+		
+        </footer>
+    </body>
+</html>
